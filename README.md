@@ -7,7 +7,7 @@ The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 </br>
 </br>
 <p align="center">
-<img src="images/" width="300px" height="300px">
+<img src="images/Figure1_CRISP_DM_Model.jpeg" width="300px" height="300px">
 <h4 align="center"> Figure 1</h4>
 </p>
 
@@ -19,13 +19,13 @@ The original dataset (bank-full.csv) given is in .csv format.It consists of 17 c
 
 </br>
 <p align="center">
-<img src="images/" width="800px">
+<img src="images/Figure17_2.jpeg" width="800px">
 <h4 align="center"> Figure 3</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/" width="800px">
+<img src="images/Figure17_3.jpeg" width="800px">
 <h4 align="center"> Figure 3</h4>
 </p>
 
@@ -35,6 +35,6 @@ The first step was check if there were any null values (see Figure 3), and also 
 
 </br>
 <p align="center">
-<img src="images/" width="800px">
+<img src="images/Figure17_4.jpeg" width="800px">
 <h4 align="center"> Figure 3</h4>
 </p>
