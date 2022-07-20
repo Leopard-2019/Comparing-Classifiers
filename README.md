@@ -35,6 +35,7 @@ The original dataset (bank-full.csv) given is in .csv format.It consists of 17 c
 The first step was check if there were any null values (see Figure 3), and also make sure that there was not duplicates present in the dataset as well. As it is observed in Figure 4, all the columns now have same number of rows with no null values.
 
 </br>
+</br>
 <p align="center">
 <img src="images/Figure17_4.jpeg" width="800px">
 <h4 align="center"> Figure 4</h4>
