@@ -24,6 +24,7 @@ The original dataset (bank-full.csv) given is in .csv format.It consists of 17 c
 </p>
 
 </br>
+</br>
 <p align="center">
 <img src="images/Figure17_3.jpeg" width="1000px">
 <h4 align="center"> Figure 3</h4>
