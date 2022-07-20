@@ -20,7 +20,7 @@ The original dataset (bank-full.csv) given is in .csv format.It consists of 17 c
 </br>
 <p align="center">
 <img src="images/Figure17_2.jpeg" width="800px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 2</h4>
 </p>
 
 </br>
@@ -36,5 +36,5 @@ The first step was check if there were any null values (see Figure 3), and also 
 </br>
 <p align="center">
 <img src="images/Figure17_4.jpeg" width="800px">
-<h4 align="center"> Figure 3</h4>
+<h4 align="center"> Figure 4</h4>
 </p>
