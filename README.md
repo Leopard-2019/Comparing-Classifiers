@@ -32,11 +32,11 @@ The original dataset (bank-full.csv) given is in .csv format.It consists of 17 c
 
 
 <h2>Data Preparation</h2>
-The first step was check if there were any null values (see Figure 3), and also make sure that there was not duplicates present in the dataset as well. As it is observed in Figure 4, all the columns now have same number of rows with no null values.
+The first step was check if there were any null values, and also make sure that there was not duplicates present in the dataset as well. As it is observed in Figure 4, there were initially no null values nor duplicates.
 
 </br>
 </br>
 <p align="center">
-<img src="images/" width="800px">
+<img src="images/Figure17_4.jpeg" width="800px">
 <h4 align="center"> Figure 4</h4>
 </p>
