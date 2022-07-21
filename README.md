@@ -37,6 +37,6 @@ The first step was check if there were any null values (see Figure 3), and also 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_4.jpeg" width="800px">
+<img src="images/" width="800px">
 <h4 align="center"> Figure 4</h4>
 </p>
