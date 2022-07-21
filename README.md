@@ -44,7 +44,6 @@ The first step was check if there were any null values, and also make sure that 
 Columns: "job", "education", "poutcome", and "contact" have a feature with the same name: "unknown", so it was decided to replace it wiht different name to avoid potential problems in the foregoing analysis as indicated by Figure 5:
 
 </br>
-</br>
 <p align="center">
 <img src="images/Figure17_5.jpeg" width="800px">
 <h4 align="center"> Figure 4</h4>
