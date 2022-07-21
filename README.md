@@ -46,6 +46,6 @@ Columns: "job", "education", "poutcome", and "contact" have a feature with the s
 </br>
 <p align="center">
 <img src="images/Figure17_5.jpeg" width="800px">
-<h4 align="center"> Figure 4</h4>
+<h4 align="center"> Figure 5</h4>
 </p>
 
