@@ -278,7 +278,7 @@ As it can be observed,  the best model is between  KNeighborsClassifier and Logi
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval.jpeg" width="400px">
+<img src="images/Figure17_eval.jpeg" width="500px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
