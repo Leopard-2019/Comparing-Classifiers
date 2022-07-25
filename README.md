@@ -1,6 +1,7 @@
 <h1>Comparing-Classifiers</h1>
 This python application using jupyter notebookm compares the results of k-nearest neighbors, logistic regression, decision trees, and support vector machines classification models using dataset related to the marketing of bank products over the telephone.
 
+</br>
 [Jupiter Notebook used](https://github.com/Leopard-2019/Comparing-Classifiers/blob/main/notebook/PracticalApplicationAssignment_17.1-Copy1.ipynb)
 
 </br>
