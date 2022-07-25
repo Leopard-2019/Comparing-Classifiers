@@ -158,7 +158,7 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 14</h4>
 </p>
 
-The independent variables dataset is comprised by 78 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
+The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
 
 </br>
 <p align="center">
