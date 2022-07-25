@@ -144,7 +144,7 @@ None of the independent variables were considered to be treated as a ordinal fea
 Since, most of the columns have values between 0 or 1, it was decided to scale the columns: "balance" as follow:
 
 <p align="center">
-<img src="images/Figure17_divided.jpeg" width="1000px">
+<img src="images/Figure17_divided_1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -153,7 +153,7 @@ Splitting the dependent variable from the independent variables and assigning th
 
 </br>
 <p align="center">
-<img src="images/Figure17_splitting1.jpeg" width="1000px">
+<img src="images/Figure17_split_1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -161,7 +161,7 @@ The independent variables dataset is comprised by 77 columns and 6316 rows. Figu
 
 </br>
 <p align="center">
-<img src="images/Figure17_histo.jpeg" width="1000px">
+<img src="images/Figure17_histo_1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
