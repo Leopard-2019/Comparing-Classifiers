@@ -92,4 +92,25 @@ The presence of outliers in the numerical columns: 'age", "balance", and "pdays"
 <h4 align="center"> Figure 11</h4>
 </p>
 
-One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, however its logarithm version was not used during the modelling phase.
+One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_12.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_13.jpeg" width="1000px">
+<h4 align="center"> Figure 13</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_14.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
