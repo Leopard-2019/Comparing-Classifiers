@@ -116,6 +116,27 @@ One passes was applied to the aforementioned columns in order to remove the outl
 <h4 align="center"> Figure 14</h4>
 </p>
 
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_y.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+
+
+Once an effective cleaning work has been completed, including removing most or all of the outliers. A boxplot "price" vs. the rest of the columns can be built & analyized as follows:
+
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_client.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+
+
 <h4>Treatment of Categorical Features</h4>
 
 <h3>Nominal Features</h3>
