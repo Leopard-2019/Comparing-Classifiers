@@ -273,7 +273,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <h2>Evaluation</h2>
-As it can be observed,  the best model is between  KNeighborsClassifier and Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve is shown on figure, indicating that the best model is the Logistic Regression model (red line), however,  it did consume a bit more  elapsed time than that of KNeighborsClassifier. The confusion matrix (figure ) suggests that the precision number seems to be better in the KNeighborsClassifier, but the Logistic regresison model seems to have better recall number . However, it is thought that the recall is more important, since the bank would greatly regreted if potentially good clients are predicted not to subscribe term deposit.As a result, it was thought that the Decision Tree model was the winner for classifying this dataset.
+As it can be observed,  the best model is between  KNeighborsClassifier and Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure) indicates that the best model is the Logistic Regression model (red line), however,  it did consume a bit more  elapsed time than that of KNeighborsClassifier. The confusion matrix (figure ) suggests that the precision number seems to be better in the KNeighborsClassifier (73%) versus the Logistic regression  (67%), but the Logistic regression model seems to have better recall number (49%) versus the  KNeighborsClassifier (41% ) . However, it is thought that the recall is more important, since the bank would greatly regretted if potentially good clients are predicted not to subscribe a term deposit. As a result, it was thought that the Logistic Regression model was the winner for classifying the dataset analyzed in this study..
 
 </br>
 </br>
@@ -289,3 +289,21 @@ As it can be observed,  the best model is between  KNeighborsClassifier and Logi
 <h4 align="center"> Figure 36</h4>
 </p>
 
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_confusion.jpeg" width="1200px">
+<h4 align="center"> Figure 36</h4>
+</p>
+
+<h2>Deployment</h2>
+The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
+
+<h2>Main Conclusions & Recomendations</h2>
+<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
+<p>2. The best classification model is considered the Logistic Regression based on the combined analysis of the metrics, Precision-recall curve, and confusion matrix. Although, the KNeighborsClassifier is also ranked pretty well </p>
+<p> 3. It is important to highlight that the numerical variables "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1.</p>
+<p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
+<p> 5. There were only three numerical variables in the initial dataset: 'age','balance','pdays', the rest were nominal that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1.</p>
+<p> 6. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
+<p> 7. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
