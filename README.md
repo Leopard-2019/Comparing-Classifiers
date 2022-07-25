@@ -12,10 +12,10 @@ The current CRISP-DM Process Model for Data Mining (see Figure 1) was followed.
 </p>
 
 <h2>Business Understanding</h2>
-The Business goal is  to come up with a machine learning classification model to identify if a future client will subscribe a term deposit or not based on several independent variables such as education level, marital status, if has housing loan or not, personal loan or not, etc. The machine learning classification model is selected by ranking up four different machine learning models: KNeighborsClassifier, Logistic Regression, Support Vector Machine, and Decision Tree by their metrics and other indicators such as the Precision-recal curve, and confusion matrix. The dataset used to train those four models is related to the marketing of bank products over the telephone as mentioned before. The analysis will be done using python & jupyter notebook.
+The Business goal is  to come up with the best machine learning classification model to predict if a future client will subscribe a term deposit or not based on several independent variables such as education level, marital status, if has housing loan or not, personal loan or not, etc. The best machine learning classification model is selected by ranking up four different machine learning models: KNeighborsClassifier, Logistic Regression, Support Vector Machine, and Decision Tree by their metrics and other indicators such as the Precision-recal curve, and confusion matrix. The dataset used to train those four models is related to the marketing of bank products over the telephone as mentioned before. The analysis will be done using python & jupyter notebook.
 
 <h2>Data Understanding</h2>
-The original dataset (bank-full.csv) given is in .csv format.It consists of 17 columns and 6316 rows as shown below. The target/independent columns is "y" which is categorical (nominal feature), and it stands for: has the client subscribed a term deposit?. This variable is imbalance as will be later be seen. There are only two numerical columns: "age","balance", and "pdays" since the column: "duration" is only for benchmark purposes and is discarded for realistic predictive modelling, and the columns" day" and "month" were not considered numerical for obvious reason during the classification process..The rest of the columns are categorical (nominal). Most of the dataset provided is imbalanced before entering the modeling phase. None of the columns contain "NaN" values. Duplicates were not observed. It is thought that in order to provide more insight into the aforementioned dataset, a data preparation,i.e, data cleaning process needs to be done first.
+The original dataset (bank-full.csv) given is in .csv format.It consists of 17 columns and 6316 rows as shown below. The target/independent columns is "y" which is categorical (nominal feature), and it stands for: has the client subscribed a term deposit?. This variable is imbalance as will be later be seen. There are six numerical columns: 'age','balance','duration','previous','campaign','pdays' since the column: "duration" is only for benchmark purposes and is discarded for realistic predictive modelling, and the columns" day" and "month" were not considered numerical for obvious reason during the classification process..The rest of the columns are categorical (nominal). Most of the dataset provided is imbalanced before entering the modeling phase. None of the columns contain "NaN" values. Duplicates were not observed. It is thought that in order to provide more insight into the aforementioned dataset, a data preparation,i.e, data cleaning process needs to be done first.
 
 </br>
 </br>
@@ -72,29 +72,9 @@ More insight into the dataset can be gained before finalizing the data preparati
 
 
 <h3>Treatment of Outliers in Numerical Columns: "age", "balance", and "pdays"</h3>
-The presence of outliers in the numerical columns: 'age','balance','duration','previous','campaign',and'pdays'. (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
+The presence of outliers in the numerical columns: 'age','balance','previous','campaign',and'pdays'. (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
-</br>
-<p align="center">
-<img src="images/Figure17_duration_1.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
-</p>
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_camp_1.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
-</p>
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_previous_1.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
-</p>
-
 </br>
 <p align="center">
 <img src="images/Figure17_9.jpeg" width="1000px">
@@ -114,27 +94,6 @@ The presence of outliers in the numerical columns: 'age','balance','duration','p
 </p>
 
 One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers, and improving the metrics during the modelling phase. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_duration_2.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
-</p>
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_camp_2.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
-</p>
-
-</br>
-</br>
-<p align="center">
-<img src="images/Figure17_previous_2.jpeg" width="1000px">
-<h4 align="center"> Figure 12</h4>
-</p>
 
 </br>
 </br>
@@ -183,10 +142,10 @@ None of the independent variables were considered to be treated as a ordinal fea
 </br>
 </br>
 
-Since, most of the columns have values between 0 or 1, it was decided to scale the columns: "balance", and 'duration' as follow:
+Since, most of the columns have values between 0 or 1, it was decided to scale the column: "balance" as follow:
 
 <p align="center">
-<img src="images/Figure17_divided_1.jpeg" width="1000px">
+<img src="images/Figure17_divided.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -203,7 +162,7 @@ The independent variables dataset is comprised by 78 columns and 6316 rows. Figu
 
 </br>
 <p align="center">
-<img src="images/Figure17_histo_1.jpeg" width="1000px">
+<img src="images/Figure17_histo.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -240,7 +199,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_knn_33.jpeg" width="1000px">
+<img src="images/Figure17_knn_metric.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -263,7 +222,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_lgr_33.jpeg" width="1000px">
+<img src="images/Figure17_lgr_metrics.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -286,7 +245,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_svc_33.jpeg" width="1000px">
+<img src="images/Figure17_svc_3.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -309,7 +268,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_tree_33.jpeg" width="1000px">
+<img src="images/Figure17_tree_3.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -320,21 +279,21 @@ As it can be observed,  the best model seems to be Logistic Regression as shown 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval_11.jpeg" width="500px">
+<img src="images/Figure17_eval.jpeg" width="500px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval22.jpeg" width="600px">
+<img src="images/Figure17_eval_2.jpeg" width="600px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval_33.jpeg" width="1200px">
+<img src="images/Figure17_confusion.jpeg" width="1200px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -342,10 +301,10 @@ As it can be observed,  the best model seems to be Logistic Regression as shown 
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 78 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
+<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
 <p>2. The best classification model is overall the Logistic Regression model for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend </p>
-<p> 3. It is important to highlight that the numerical variables "balance", and 'duration" were divided by 100 and 10 respectively, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
+<p> 3. It is important to highlight that the numerical variable "balance" wasdivided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
 <p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
-<p> 5. There six numerical variables in the initial dataset: 'age','balance','duration','previous','campaign','pdays', the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
+<p> 5. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
 <p> 6. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
 <p> 7. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
