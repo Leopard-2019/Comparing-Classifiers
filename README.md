@@ -147,7 +147,7 @@ Once an effective cleaning work has been completed, including removing most or a
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_marital.education" width="1000px">
+<img src="images/Figure17_education.jpeg" width="1000px">
 <h4 align="center"> Figure 18</h4>
 </p>
 
