@@ -116,6 +116,8 @@ One passes was applied to the aforementioned columns in order to remove the outl
 <h4 align="center"> Figure 14</h4>
 </p>
 
+The target column, i.e., the dependent variables: "y" is binary, and imbalanced as observed below:
+
 </br>
 </br>
 <p align="center">
@@ -125,13 +127,34 @@ One passes was applied to the aforementioned columns in order to remove the outl
 
 
 
-Once an effective cleaning work has been completed, including removing most or all of the outliers. A boxplot "price" vs. the rest of the columns can be built & analyized as follows:
+Once an effective cleaning work has been completed, including removing most or all of the outliers. A boxplot "balance" vs. most of independent columns was built & analyized, indicating that in all categories: the client's age,client's job,client' marital status, client's education level, including housing's loan, personal's loan, even the  contact communication's, the clients that subscribed term deposit have more money in the their balance's account in general. Some of those plots are shown below:
 
 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_age.jpeg" width="1000px">
+<img src="images/Figure17_job.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_marital.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_marital.education" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_housing.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
