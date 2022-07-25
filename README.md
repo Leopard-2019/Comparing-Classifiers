@@ -153,9 +153,11 @@ Splitting the dependent variable from the independent variables and assigning th
 
 </br>
 <p align="center">
-<img src="images/Figure17_splitting.jpeg" width="1000px">
+<img src="images/Figure17_splitting1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
+
+The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
 
 </br>
 <p align="center">
@@ -163,5 +165,30 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 14</h4>
 </p>
 
+<h3>Cross-Validation Approach used</h3>
+Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as follows:
 
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_splitting2.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+
+<h2>Modelling</h2>
+Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data. The statistical results of the analysis are shown below:
+
+<h4>KNeighborsClassifier</h4>
+The supervised learning algorithmK-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure . 
+                  
+</br>
+<p align="center">
+<img src="images/RidgeModel_1.jpeg" width="400px">
+<h4 align="center"> Figure 36</h4>
+</p>
+
+
+<h2>Evaluation</h2>
+As it can be observed,  the model with better metrics is Logistic Regression, although, it consumed more elapsed time for fitting than the rest of the models. However, the reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve  indicates that the best model is the Decision Tree model (green line), which consumed less elapse time, and its metrics are not that far from the SVC. As a result, it was thought that the Decision Tree model was the winner for classifying this dataset.
 
