@@ -119,7 +119,7 @@ One passes was applied to the aforementioned columns in order to remove the outl
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_y.jpeg" width="300px">
+<img src="images/Figure17_y.jpeg" width="500px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
