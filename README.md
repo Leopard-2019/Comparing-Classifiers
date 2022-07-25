@@ -143,7 +143,6 @@ None of the independent variables were considered to be treated as a ordinal fea
 
 Since, most of the columns have values between 0 or 1, it was decided to scale the columns: "balance" as follow:
 
-</br>
 <p align="center">
 <img src="images/Figure17_divided.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
