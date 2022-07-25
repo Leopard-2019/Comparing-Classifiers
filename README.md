@@ -361,3 +361,4 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 <p> 5. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
 <p> 6. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
 <p> 7. In all categories: the client's age,client's job,client' marital status, client's education level, including housing's loan, personal's loan, even the contact communication's, the clients that subscribed term deposit have more balance in their account in general. </p>
+<p>8.It is recommend to test other classification models such as: Random Forest, Naive Bayes.
