@@ -276,6 +276,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 As it can be observed,  the model with better metrics is Logistic Regression, although, it consumed more elapsed time for fitting than the rest of the models. However, the reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve  indicates that the best model is the Decision Tree model (green line), which consumed less elapse time, and its metrics are not that far from the SVC. As a result, it was thought that the Decision Tree model was the winner for classifying this dataset.
 
 </br>
+</br>
 <p align="center">
 <img src="images/Figure17_eval.jpeg" width="500px">
 <h4 align="center"> Figure 36</h4>
