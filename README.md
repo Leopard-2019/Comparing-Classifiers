@@ -173,3 +173,6 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 </p>
 
 
+<h2>Modelling</h2>
+Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data
+
