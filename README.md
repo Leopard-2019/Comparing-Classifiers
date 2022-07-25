@@ -180,13 +180,29 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data. The statistical results of the analysis are shown below:
 
 <h4>KNeighborsClassifier</h4>
-The supervised learning algorithmK-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure . 
+The supervised learning algorithmK-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure. 
                   
 </br>
 <p align="center">
-<img src="images/RidgeModel_1.jpeg" width="400px">
+<img src="images/Figure17_knn_1.jpeg" width="400px">
 <h4 align="center"> Figure 36</h4>
 </p>
+
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure). The optimum values for those, and the metrics results are shown on Figure 43. The differences between the validation test and the predicted by the model are shown as a histogram plot (Figure 44). As done in the previous model, the K-fold cross-validation technique was also used to estimate metrics (see Figure 45). The regression coefficients of the 10 features selected are shown on Table 4.
+
+</br>
+<p align="center">
+<img src="images/Figure17_knn_2.jpeg.jpeg" width="400px">
+<h4 align="center"> Figure 36</h4>
+</p>
+
+</br>
+<p align="center">
+<img src="images/Figure17_knn_3.jpeg.jpeg" width="400px">
+<h4 align="center"> Figure 36</h4>
+</p>
+
+
 
 
 <h2>Evaluation</h2>
