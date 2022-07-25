@@ -138,6 +138,8 @@ Binary data is also nominal data, meaning they represent qualitatively different
 <h3>Ordinal Features</h3>
 None of the independent variables were considered to be treated as a ordinal feature, not even poutcome, since there were a bunch of 'unknown' and 'other' items listed, beside 'failure' and 'success'.
 
+</br>
+
 Since, most of the columns have values between 0 or 1, it was decided to scale the columns: "balance" as follow:
 
 </br>
