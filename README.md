@@ -141,10 +141,10 @@ None of the independent variables were considered to be treated as a ordinal fea
 </br>
 </br>
 
-Since, most of the columns have values between 0 or 1, it was decided to scale the columns: "balance" as follow:
+Since, most of the columns have values between 0 or 1, it was decided to scale the columns: "balance", and 'duration' as follow:
 
 <p align="center">
-<img src="images/Figure17_divided.jpeg" width="1000px">
+<img src="images/Figure17_divided_1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -153,15 +153,15 @@ Splitting the dependent variable from the independent variables and assigning th
 
 </br>
 <p align="center">
-<img src="images/Figure17_splitting1.jpeg" width="1000px">
+<img src="images/Figure17_split_1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
-The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
+The independent variables dataset is comprised by 78 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
 
 </br>
 <p align="center">
-<img src="images/Figure17_histo.jpeg" width="1000px">
+<img src="images/Figure17_histo_1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -273,7 +273,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <h2>Evaluation</h2>
-As it can be observed,  the best model seems to be Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure) may indicate that the best model is the Decision Tree model (red line), however,  it did consume much significantly more elapsed time than that of KNeighborsClassifier, and Logistic Regression. The confusion matrix (figure ) suggests that the precision number seems to be a bit  better in the KNeighborsClassifier (72%) versus the Logistic regression  (70%), Support vector Machine  (63%),and Decision Tree (71%) , but Support Vector Machine model seems to have a bit better recall number (56%),  versus the Logistic regression  (53%), Decision Tree (53%),and  KNeighborsClassifier  (40%) . However, it is thought that the recall is more important, since the bank would greatly regretted if potentially good clients are predicted not to subscribe a term deposit. As a result, it was thought that overal Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend.
+As it can be observed,  the best model seems to be Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure) may indicate that the best model is the Decision Tree model (green line), however,  it did consume significantly more elapsed time than that of KNeighborsClassifier, and Logistic Regression. The confusion matrix (figure ) suggests that the precision number seems to be a bit  better in the KNeighborsClassifier (72%) versus the Logistic regression  (70%), Support vector Machine  (63%),and Decision Tree (71%) , but Support Vector Machine model seems to have a bit better recall number (56%),  versus the Logistic regression  (53%), Decision Tree (53%),and  KNeighborsClassifier  (40%) . However, it is thought that the recall is more important, since the bank would greatly regretted if potentially good clients are predicted not to subscribe a term deposit. As a result, it was thought that overal Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend.
 
 </br>
 </br>
