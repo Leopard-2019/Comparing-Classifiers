@@ -177,5 +177,10 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 
 
 <h2>Modelling</h2>
-Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data
+Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data. The statistical results of the analysis are shown below:
+
+
+
+<h2>Evaluation</h2>
+As it can be observed,  the model with better metrics is Logistic Regression, although, it consumed more elapsed time for fitting than the rest of the models. However, the reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve  indicates that the best model is the Decision Tree model (green line), which consumed less elapse time, and its metrics are not that far from the SVC. As a result, it was thought that the Decision Tree model was the winner for classifying this dataset.
 
