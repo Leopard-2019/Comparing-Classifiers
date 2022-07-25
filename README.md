@@ -273,12 +273,19 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <h2>Evaluation</h2>
-As it can be observed,  the model with better metrics is Logistic Regression, although, it consumed a bit more elapsed time for fitting than the KNeighborsClassifier model. 
+As it can be observed,  the best model is between  KNeighborsClassifier and Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve. This curve is shown on figure, indicating that the best model is the Logistic Regression model (red line), however,  it did consume a bit more  elapsed time than that of KNeighborsClassifier. The confusion matrix (figure ) suggests that the precision number seems to be better in the KNeighborsClassifier, but the Logistic regresison model seems to have better recall number . However, it is thought that the recall is more important, since the bank would greatly regreted if potentially good clients are predicted not to subscribe term deposit.As a result, it was thought that the Decision Tree model was the winner for classifying this dataset.
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_eval.jpeg" width="500px">
+<h4 align="center"> Figure 36</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_eval_2.jpeg" width="600px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
