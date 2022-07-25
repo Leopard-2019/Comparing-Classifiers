@@ -41,7 +41,7 @@ The first step was check if there were any null values, and also make sure that 
 <h4 align="center"> Figure 4</h4>
 </p>
 
-Columns: "job", "education", "poutcome", and "contact" have a feature with the same name: "unknown", so it was decided to replace it wiht different name to avoid potential problems in the foregoing analysis as indicated by Figure 5:
+Columns: "job", "education", "poutcome", and "contact" have a feature with the same name: "unknown", so it was decided to replace it with different names to avoid potential problems in the foregoing analysis as indicated by Figure 5:
 
 </br>
 <p align="center">
@@ -93,7 +93,7 @@ The presence of outliers in the numerical columns: 'age','balance',,and 'pdays' 
 <h4 align="center"> Figure 11</h4>
 </p>
 
-One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers, and improving the metrics during the modelling phase. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
+One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 12, 13, and 14 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers, and improving the metrics during the modelling phase. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
 
 </br>
 </br>
@@ -122,7 +122,7 @@ The target column, i.e., the dependent variables: "y" is binary, and imbalanced 
 </br>
 <p align="center">
 <img src="images/Figure17_y.jpeg" width="500px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 15</h4>
 </p>
 
 
@@ -134,28 +134,28 @@ Once an effective cleaning work has been completed, including removing most or a
 </br>
 <p align="center">
 <img src="images/Figure17_job.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 16</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_marital.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 17</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_marital.education" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 18</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_housing.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 19</h4>
 </p>
 
 
@@ -169,7 +169,7 @@ Those encoded features were added to the existing dataset using the panda functi
 </br>
 <p align="center">
 <img src="images/Figure17_Nominal.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 20</h4>
 </p>
 
 Binary data is also nominal data, meaning they represent qualitatively different values that cannot be compared numerically.There were three independent variables considered as binary: 'default' 'housing', ;'loan' all of them with 'yes' and 'no'.
@@ -177,7 +177,7 @@ Binary data is also nominal data, meaning they represent qualitatively different
 </br>
 <p align="center">
 <img src="images/Figure17_binary.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 21</h4>
 </p>
 
 <h3>Ordinal Features</h3>
@@ -190,7 +190,7 @@ Since, most of the columns have values between 0 or 1, it was decided to scale t
 
 <p align="center">
 <img src="images/Figure17_divided.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 22</h4>
 </p>
 
 <h3>Splitting the variables</h3>
@@ -199,7 +199,7 @@ Splitting the dependent variable from the independent variables and assigning th
 </br>
 <p align="center">
 <img src="images/Figure17_splitting1.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 23</h4>
 </p>
 
 The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
@@ -207,7 +207,7 @@ The independent variables dataset is comprised by 77 columns and 6316 rows. Figu
 </br>
 <p align="center">
 <img src="images/Figure17_histo.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 24</h4>
 </p>
 
 <h3>Cross-Validation Approach used</h3>
@@ -217,7 +217,7 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 </br>
 <p align="center">
 <img src="images/Figure17_splitting2.jpeg" width="1000px">
-<h4 align="center"> Figure 14</h4>
+<h4 align="center"> Figure 25</h4>
 </p>
 
 
@@ -225,84 +225,84 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The statistical results of the analysis are shown below:
 
 <h4>KNeighborsClassifier</h4>
-The supervised learning algorithm K-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure. 
+The supervised learning algorithm K-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure 26. 
                   
 </br>
 <p align="center">
 <img src="images/Figure17_knn_1.jpeg" width="300px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 26</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure). The optimum values for those, and the metrics results are shown on Figure. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 27). The optimum values for those, and the metrics results are shown on Figure 28. 
 
 </br>
 <p align="center">
 <img src="images/Figure17_knn_2.jpeg" width="1000px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 27</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/Figure17_knn_44.jpeg" width="1000px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 28</h4>
 </p>
 
 <h4>Logistic Regression</h4>
-The supervised learning algorithm Logistic regression was also used for classification in this analysis, since the dependent variable is binary.The pipeline model is shown on Figure. 
+The supervised learning algorithm Logistic regression was also used for classification in this analysis, since the dependent variable is binary.The pipeline model is shown on Figure 29. 
                   
 </br>
 <p align="center">
 <img src="images/Figure17_lgr_1.jpeg" width="300px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 29</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure). The optimum values for those, and the metrics results are shown on Figure. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 30). The optimum values for those, and the metrics results are shown on Figure 31. 
 
 </br>
 <p align="center">
 <img src="images/Figure17_lgr_2.jpeg" width="1000px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 30</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/Figure17_lgr_44.jpeg" width="1000px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 31</h4>
 </p>
 
 <h4>Support Vector Machine</h4>
-The supervised learning support vector machine (SVM) is used for classification in this analysis.The pipeline model is shown on Figure. 
+The supervised learning support vector machine (SVM) is used for classification in this analysis.The pipeline model is shown on Figure 32. 
                   
 </br>
 <p align="center">
 <img src="images/Figure17_svc_1.jpeg" width="300px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 32</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure). The optimum values for those, and the metrics results are shown on Figure. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 33). The optimum values for those, and the metrics results are shown on Figure 34. 
 
 </br>
 <p align="center">
 <img src="images/Figure17_svc_2.jpeg" width="1000px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 33</h4>
 </p>
 
 </br>
 <p align="center">
 <img src="images/Figure17_svc_44.jpeg" width="1000px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 34</h4>
 </p>
 
 <h4>Decision Tree</h4>
-The supervised learning decision tree is used for classification in this analysis.The pipeline model is shown on Figure. 
+The supervised learning decision tree is used for classification in this analysis.The pipeline model is shown on Figure 35. 
                   
 </br>
 <p align="center">
 <img src="images/Figure17_tree_1.jpeg" width="300px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 35</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure). The optimum values for those, and the metrics results are shown on Figure. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 36). The optimum values for those, and the metrics results are shown on Figure 37. 
 
 </br>
 <p align="center">
@@ -313,39 +313,39 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 </br>
 <p align="center">
 <img src="images/Figure17_tree_44.jpeg" width="300px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 37</h4>
 </p>
 
 
 <h2>Evaluation</h2>
-As it can be observed,  the best model seems to be Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure) may indicate that the best model is the Logistic Regression(red line), however,  it did consume a bit more elapsed time than that of KNeighborsClassifier. The confusion matrix (figure ) and some of its associated statistics suggest that the precision number seems to be a bit  better in the KNeighborsClassifier (73%) versus the Logistic regression  (67%), Support vector Machine  (63%),and Decision Tree (64%) , but Support Vector Machine model seems to have a bit better recall number (56%),  versus the Logistic regression  (53%), Decision Tree (54%),and  KNeighborsClassifier  (41%) . However, it is thought that the recall is more important, since the bank would greatly regrett if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be of paramount importance for the bank, specially knowing that those outnumber the number of False Positives. As a result, it was thought that overall Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the KNeighborsClassifier and Decision Tree  are fairly decent.
+As it can be observed,  the best model seems to be Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure 38) may indicate that the best model is the Logistic Regression(red line), however,  it did consume a bit more elapsed time than that of KNeighborsClassifier. The confusion matrix (figure 39) and some of its associated statistics (see Table 2) suggest that the precision number seems to be a bit  better in the KNeighborsClassifier (73%) versus the Logistic regression  (67%), Support vector Machine  (63%),and Decision Tree (64%) , but Support Vector Machine model seems to have a bit better recall number (56%),  versus the Logistic regression  (53%), Decision Tree (54%),and  KNeighborsClassifier  (41%) . However, it is thought that the recall is more important, since the bank would greatly regrett if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be of paramount importance for the bank, specially knowing that those outnumber the number of False Positives. As a result, it was thought that overall Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the KNeighborsClassifier and Decision Tree  are fairly decent.
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_eval_1_2.jpeg" width="500px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Table 1</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_eval_2.jpeg" width="600px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 38</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_confusion.jpeg" width="1200px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Figure 39</h4>
 </p>
 
 </br>
 </br>
 <p align="center">
 <img src="images/Figure17_eval_44.jpeg" width="400px">
-<h4 align="center"> Figure 36</h4>
+<h4 align="center"> Table 2</h4>
 </p>
 
 <h2>Deployment</h2>
