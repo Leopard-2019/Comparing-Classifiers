@@ -157,13 +157,15 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 14</h4>
 </p>
 
+The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
+
 </br>
 <p align="center">
 <img src="images/Figure17_histo.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
-The HoldOut Cross-validation was used, i.e, splitting data into training and validation sets using the train_test_split function as shown below:
+Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used, i.e, splitting data into training and validation sets using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as follows:
 
 <p align="center">
 <img src="images/Figure17_splitting2.jpeg" width="1000px">
