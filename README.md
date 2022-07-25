@@ -301,9 +301,9 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
-<p>2. The best classification model is considered the Logistic Regression based on the metrics, Precision-recall curve, and confusion matrix.</p>
-<p> 3. It is important to highlight that the numerical variables "balance" was divided by 100, before initiating the regression modeling, since the rest of the columns have values 0 and 1.</p>
+<p>2. The best classification model is considered the Logistic Regression based on the combined analysis of the metrics, Precision-recall curve, and confusion matrix. Although, the KNeighborsClassifier is also ranked pretty well </p>
+<p> 3. It is important to highlight that the numerical variables "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1.</p>
 <p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
-<p> 5. There were only three numerical variables in the initial dataset: 'age','balance','pdays', the rest were nominal that were converted to values 0 and 1.  Therefore, most of the independent variables had  values 0 and 1.</p>
+<p> 5. There were only three numerical variables in the initial dataset: 'age','balance','pdays', the rest were nominal that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1.</p>
 <p> 6. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
-<p> 7. The precision- recall curve was chosen as indicator since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
+<p> 7. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
