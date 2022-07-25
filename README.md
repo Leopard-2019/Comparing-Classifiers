@@ -165,7 +165,6 @@ Splitting the dependent variable from the independent variables and assigning th
 
 The HoldOut Cross-validation was used, i.e, splitting data into training and validation sets using the train_test_split function as shown below:
 
-</br>
 <p align="center">
 <img src="images/Figure17_splitting2.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
