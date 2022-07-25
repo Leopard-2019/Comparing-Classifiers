@@ -233,7 +233,7 @@ The supervised learning algorithm K-nearest neighbors (KNN) was used for classif
 <h4 align="center"> Figure 26</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 27). The optimum values for those, and the metrics results are shown on Figure 28. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 27). The optimum values for those, and the metrics results are shown on Figure 27. 
 
 </br>
 <p align="center">
