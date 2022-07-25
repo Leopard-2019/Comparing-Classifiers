@@ -158,7 +158,7 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 14</h4>
 </p>
 
-The independent variables dataset is comprised by 78 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
+The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
 
 </br>
 <p align="center">
@@ -199,7 +199,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_knn_metric.jpeg" width="1000px">
+<img src="images/Figure17_knn_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -222,7 +222,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_lgr_metrics.jpeg" width="1000px">
+<img src="images/Figure17_lgr_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -245,7 +245,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_svc_3.jpeg" width="1000px">
+<img src="images/Figure17_svc_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -268,7 +268,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_tree_3.jpeg" width="1000px">
+<img src="images/Figure17_tree_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -302,7 +302,7 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
-<p>2. The best classification model is overall the Logistic Regression model for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend </p>
+<p>2. Overall, the best classification model is the Logistic Regression model for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the KNeighborsClassifier, and Decision Tree models. </p>
 <p> 3. It is important to highlight that the numerical variable "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
 <p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
 <p> 5. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
