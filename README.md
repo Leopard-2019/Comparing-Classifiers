@@ -92,4 +92,32 @@ The presence of outliers in the numerical columns: 'age", "balance", and "pdays"
 <h4 align="center"> Figure 11</h4>
 </p>
 
-One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, however its logarithm version was not used during the modelling phase.
+One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_12.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_13.jpeg" width="1000px">
+<h4 align="center"> Figure 13</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_14.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+<h4>Treatment of Categorical Features</h4>
+
+<h3>Nominal Features</h3>
+Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "job", "eudcation","contact","month", "day", "marital",and "poutcome". The Pandas getdummies function was used to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. 
+Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 28:
+
