@@ -154,7 +154,7 @@ Splitting the dependent variable from the independent variables and assigning th
 
 </br>
 <p align="center">
-<img src="images/Figure17_split_1.jpeg" width="1000px">
+<img src="images/Figure17_splitting1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
