@@ -179,6 +179,14 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 <h2>Modelling</h2>
 Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data. The statistical results of the analysis are shown below:
 
+<h4>KNeighborsClassifier</h4>
+The supervised learning algorithmK-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure . 
+                  
+</br>
+<p align="center">
+<img src="images/RidgeModel_1.jpeg" width="400px">
+<h4 align="center"> Figure 36</h4>
+</p>
 
 
 <h2>Evaluation</h2>
