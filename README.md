@@ -222,7 +222,7 @@ Although, the dependent variable is imbalanced, the HoldOut Cross-validation was
 
 
 <h2>Modelling</h2>
-Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data. The statistical results of the analysis are shown below:
+Although, working with imbalance data is always a challenge for any particular Machine Learning Model, four models were considered for the analysis: KNN, Logistic Regression, Support Machine Vector, and Decision Tree. The metric used to estimate the optimum parameters for each model was 'roc_auc' (the area under the ROC curve), since it works quite well for imbalance data. The statistical results of the analysis are shown below:
 
 <h4>KNeighborsClassifier</h4>
 The supervised learning algorithm K-nearest neighbors (KNN) was used for classification in this analysis.The pipeline model is shown on Figure. 
@@ -355,7 +355,7 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 <p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
 <p>2. Overall, the best classification model is the Logistic Regression model for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the KNeighborsClassifier, and Decision Tree models. </p>
 <p> 3. It is important to highlight that the numerical variable "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
-<p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
-<p> 5. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', since "duration" was only for benchmark purposes and was discarded for realistic predictive modelling,the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
-<p> 6. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
-<p> 7. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
+<p> 4. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', since "duration" was only for benchmark purposes and was discarded for realistic predictive modelling,the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
+<p> 5. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
+<p> 6. The precision- recall curve was chosen also as a indicator, since works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis.</p>
+<p> 7. All categories: the client's age,client's job,client' marital status, client's education level, including housing's loan, personal's loan, even the contact communication's, the clients that subscribed term deposit have more money in the their balance's account in general. </p>
