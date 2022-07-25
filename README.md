@@ -268,7 +268,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_tree_44.jpeg" width="1000px">
+<img src="images/Figure17_tree_44.jpeg" width="300px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
