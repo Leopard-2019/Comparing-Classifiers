@@ -169,6 +169,7 @@ The independent variables dataset is comprised by 77 columns and 6316 rows. Figu
 Although, the dependent variable is imbalanced, the HoldOut Cross-validation was used. In this technique, the whole dataset is randomly partitioned into a training set and validation set using the train_test_split function. The stratify parameter was used  to preserve  the dataset proportions for better prediction and reproduceability of results as follows:
 
 </br>
+</br>
 <p align="center">
 <img src="images/Figure17_splitting2.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
