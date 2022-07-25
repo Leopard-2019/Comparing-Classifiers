@@ -119,5 +119,23 @@ One passes was applied to the aforementioned columns in order to remove the outl
 
 <h3>Nominal Features</h3>
 Nominal features are categorical features that have no numerical importance. Order does not matter. Most of the columns were found to fall in this category as follows: "job", "eudcation","contact","month", "day", "marital",and "poutcome". The Pandas getdummies function was used to creates dummy variables was used to treat them. A dummy variable is a numerical variable that encodes categorical information, having two possible values: 0 or 1. 
-Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure 28:
+Those encoded features were added to the existing dataset using the panda function contact as shown  on Figure :
+
+</br>
+<p align="center">
+<img src="images/Figure17_Nominal.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+Binary data is also nominal data, meaning they represent qualitatively different values that cannot be compared numerically.There were three independent variables considered as binary: 'default' 'housing', ;'loan' all of them with 'yes' and 'no'.
+
+</br>
+<p align="center">
+<img src="images/Figure17_binary.jpeg" width="1000px">
+<h4 align="center"> Figure 14</h4>
+</p>
+
+<h3>Ordinal Features</h3>
+None of the independent variables were considered to be treated as a ordinal feature, not even poutcome, since there were a bunch of 'unknown' and 'other' items listed, beside 'failure' and 'success'.
+
 
