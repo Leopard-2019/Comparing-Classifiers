@@ -342,9 +342,9 @@ As it can be observed,  the best model seems to be Logistic Regression as shown 
 The code was written in Python, and it is available in a Jupyter Notebook that can be accessed in the link posted at the beginning of this document.
 
 <h2>Main Conclusions & Recomendations</h2>
-<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
+<p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 78 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
 <p>2. The best classification model is overal the Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend </p>
-<p> 3. It is important to highlight that the numerical variables "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1.</p>
+<p> 3. It is important to highlight that the numerical variables "balance", and 'duration" were divided by 100 and 10 respectively, before initiating the regression modeling, since the majority of the columns have values 0 and 1.</p>
 <p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
 <p> 5. There were only three numerical variables in the initial dataset: 'age','balance','duration','previous','campaign','pdays', the rest were nominal that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1.</p>
 <p> 6. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
