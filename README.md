@@ -72,7 +72,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 
 
 <h3>Treatment of Outliers in Numerical Columns: "age", "balance", and "pdays"</h3>
-The presence of outliers in the numerical columns: 'age','balance','previous','campaign',and'pdays'. (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
+The presence of outliers in the numerical columns: 'age','balance',,and 'pdays' were treated (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
 </br>
