@@ -277,7 +277,7 @@ As it can be observed,  the model with better metrics is Logistic Regression, al
 
 </br>
 <p align="center">
-<img src="images/Figure17_eval.jpeg" width="800px">
+<img src="images/Figure17_eval.jpeg" width="500px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
