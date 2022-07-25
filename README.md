@@ -75,6 +75,27 @@ More insight into the dataset can be gained before finalizing the data preparati
 The presence of outliers in the numerical columns: 'age','balance','duration','previous','campaign',and'pdays'. (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
+</br>
+<p align="center">
+<img src="images/Figure17_duration_1.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_camp_1.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_previous_1.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
 <p align="center">
 <img src="images/Figure17_9.jpeg" width="1000px">
 <h4 align="center"> Figure 9</h4>
@@ -92,7 +113,28 @@ The presence of outliers in the numerical columns: 'age','balance','duration','p
 <h4 align="center"> Figure 11</h4>
 </p>
 
-One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
+One passes was applied to the aforementioned columns in order to remove the outliers. The values equal to -1 was removed from the column "pdays". The aforementioned pass consisted on applying the well known Inter quartile range (IQR) method. Figure 13, 14, and 15 shows the final results after applying this method to remove the outliers. As it can be observed, this pass was very effective, i.e., removing the majority of the outliers, and improving the metrics during the modelling phase. As an additional comments, the target column "balance" shows a distribution skewed to the left, i.e, it was felt there was no need  to use its logarithm during modelling phase.
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_duration_2.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_camp_2.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
+
+</br>
+</br>
+<p align="center">
+<img src="images/Figure17_previous_2.jpeg" width="1000px">
+<h4 align="center"> Figure 12</h4>
+</p>
 
 </br>
 </br>
