@@ -300,7 +300,7 @@ As it can be observed,  the best model seems to be Logistic Regression as shown 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval_44.jpeg" width="300px">
+<img src="images/Figure17_eval_44.jpeg" width="500px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
