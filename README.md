@@ -199,7 +199,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_knn_metric.jpeg" width="1000px">
+<img src="images/Figure17_knn_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -222,7 +222,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_lgr_metrics.jpeg" width="1000px">
+<img src="images/Figure17_lgr_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -245,7 +245,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_svc_3.jpeg" width="1000px">
+<img src="images/Figure17_svc_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -268,7 +268,7 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_tree_3.jpeg" width="1000px">
+<img src="images/Figure17_tree_44.jpeg" width="1000px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
