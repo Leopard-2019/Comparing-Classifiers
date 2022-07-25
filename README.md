@@ -72,7 +72,7 @@ More insight into the dataset can be gained before finalizing the data preparati
 
 
 <h3>Treatment of Outliers in Numerical Columns: "age", "balance", and "pdays"</h3>
-The presence of outliers in the numerical columns: 'age','balance','previous','campaign',and'pdays'. (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
+The presence of outliers in the numerical columns: 'age','balance',,and 'pdays' were treated (see Figures 9, 10 and 11) indicated by the respective boxplot demands a careful and efective treatment before moving into the modeling phase. The histograms of the aforementioned columns have been also added for completeness.
 
 </br>
 </br>
@@ -154,7 +154,7 @@ Splitting the dependent variable from the independent variables and assigning th
 
 </br>
 <p align="center">
-<img src="images/Figure17_split_1.jpeg" width="1000px">
+<img src="images/Figure17_splitting1.jpeg" width="1000px">
 <h4 align="center"> Figure 14</h4>
 </p>
 
@@ -274,12 +274,12 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 
 <h2>Evaluation</h2>
-As it can be observed,  the best model seems to be Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure) may indicate that the best model is the Decision Tree model (green line), however,  it did consume significantly more elapsed time than that of KNeighborsClassifier, and Logistic Regression. The confusion matrix (figure ) suggests that the precision number seems to be a bit  better in the KNeighborsClassifier (72%) versus the Logistic regression  (70%), Support vector Machine  (63%),and Decision Tree (71%) , but Support Vector Machine model seems to have a bit better recall number (56%),  versus the Logistic regression  (53%), Decision Tree (53%),and  KNeighborsClassifier  (40%) . However, it is thought that the recall is more important, since the bank would greatly regrett if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be the prime importanuce for the bank, specially knowing that those outnumber the number of False Positives. As a result, it was thought that overall Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend.
+As it can be observed,  the best model seems to be Logistic Regression as shown on Table 1. Also, it can be observed,  the elapsed time for fitting consumed for the SVC model is significantly larger than the rest of the models. The reason for that is that the option probability=True was used in this model, in order to be able to make it worked to generate a later its precision- recall curve. This type of curve works much better for moderate to large imbalanced data than the ROC-curve, which is the case for the dataset used in this analysis. This curve ( see figure) may indicate that the best model is the Logistic Regression(red line), however,  it did consume a bit more elapsed time than that of KNeighborsClassifier. The confusion matrix (figure ) suggests that the precision number seems to be a bit  better in the KNeighborsClassifier (73%) versus the Logistic regression  (67%), Support vector Machine  (63%),and Decision Tree (64%) , but Support Vector Machine model seems to have a bit better recall number (56%),  versus the Logistic regression  (53%), Decision Tree (54%),and  KNeighborsClassifier  (41%) . However, it is thought that the recall is more important, since the bank would greatly regrett if potentially good clients are predicted not to subscribe a term deposit. In other words, minimizing the number of False Negatives would be of paramount importance for the bank, specially knowing that those outnumber the number of False Positives. As a result, it was thought that overall Logistic Regression model may be considered the winner for classifying the dataset analyzed in this study, however the KNeighborsClassifier and Decision Tree  are fairly decent.
 
 </br>
 </br>
 <p align="center">
-<img src="images/Figure17_eval_1_1.jpeg" width="500px">
+<img src="images/Figure17_eval_1_2.jpeg" width="500px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -303,7 +303,7 @@ The code was written in Python, and it is available in a Jupyter Notebook that c
 <h2>Main Conclusions & Recomendations</h2>
 <p>1. The final dataset, after cleaning, removing outliers,  converting the categoricals data in 0 and 1 values,etc consists of 77 columns and 6316 rows. The target columns was "y" which stands: if a future client will subscribe a term deposit or not.</p>
 <p>2. The best classification model is overall the Logistic Regression model for classifying the dataset analyzed in this study, however the other three models are fairly decent, in particular the Decision Tree model at some extend </p>
-<p> 3. It is important to highlight that the numerical variable "balance" wasdivided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
+<p> 3. It is important to highlight that the numerical variable "balance" was divided by 100, before initiating the regression modeling, since the majority of the columns have values 0 and 1. This helped to improved the metrics.</p>
 <p> 4. The three most important features driving the price of a used car were "gas","diesel", and "automatic" in that order, according to the permutation_importance function using the the hold-out cross-validation method, and Ridge regression model. The 10 most important coefficients contributing positively to the used car price, and the 10's that contribute most negatively are shown in tables 2 and 3 respectively. </p>
 <p> 5. There were five numerical independent variables used: 'age','balance','duration','previous','campaign','pdays', the rest were nominals that were converted to values 0 and 1.  Therefore, most of the independent variables had values 0 and 1 used as final input during the modelling phase.</p>
 <p> 6. The metric used to estimate the optimum parameters for each model was 'roc_auc', since it works quite well for imbalance data </p>
