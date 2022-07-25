@@ -204,7 +204,7 @@ Splitting the dependent variable from the independent variables and assigning th
 <h4 align="center"> Figure 23</h4>
 </p>
 
-The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 33 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
+The independent variables dataset is comprised by 77 columns and 6316 rows. Figure 24 shows the histogram for the columns comprising X dataset. Please keep in mind that the intention is not being able to see the label, just the bars, etc in the histogram, because there are too many histogram.
 
 </br>
 <p align="center">
@@ -235,7 +235,7 @@ The supervised learning algorithm K-nearest neighbors (KNN) was used for classif
 <h4 align="center"> Figure 26</h4>
 </p>
 
-The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 27). The optimum values for those, and the metrics results are shown on Figure 27. 
+The GridSearchCV function was used to optimized several hyper-parameters tested (see Figure 27). The optimum values for those, and the metrics results are shown on Figure 28. 
 
 </br>
 <p align="center">
