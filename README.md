@@ -184,7 +184,7 @@ The supervised learning algorithmK-nearest neighbors (KNN) was used for classifi
                   
 </br>
 <p align="center">
-<img src="images/Figure17_knn_1.jpeg" width="400px">
+<img src="images/" width="400px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
@@ -192,13 +192,13 @@ The GridSearchCV function was used to optimized several hyper-parameters tested 
 
 </br>
 <p align="center">
-<img src="images/Figure17_knn_2.jpeg.jpeg" width="400px">
+<img src="images/" width="400px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
 </br>
 <p align="center">
-<img src="images/Figure17_knn_3.jpeg.jpeg" width="400px">
+<img src="images/" width="400px">
 <h4 align="center"> Figure 36</h4>
 </p>
 
